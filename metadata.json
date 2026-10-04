@@ -1,0 +1,6 @@
+{
+  "name": "Jalrakshak AI - Smart Water Management",
+  "description": "AI-powered civic water management platform. Every Drop Matters. Every Complaint Counts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

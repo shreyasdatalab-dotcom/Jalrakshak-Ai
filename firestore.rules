@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Complaints collection used by citizens and municipal staff
+    match /complaints/{complaintId} {
+      allow read, write: if true;
+    }
+    
+    // Water alerts collection
+    match /alerts/{alertId} {
+      allow read, write: if true;
+    }
+
+    // Default deny for all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
